@@ -167,7 +167,7 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-# To reapete fives time
+# To reapete fives time until the user press no  
 def view_data (df):
     
     view_data=input('Would you like to view 5 rows of individual trip data? yes or no? ').lower()
@@ -190,6 +190,7 @@ def main():
         
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
+
             break
 
 
